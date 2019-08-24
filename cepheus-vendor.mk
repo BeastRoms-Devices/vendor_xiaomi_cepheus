@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/xiaomi/cepheus/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/xiaomi/cepheus/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/libdisplayconfig.so:system/lib64/libdisplayconfig.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/libdisplayfeature.so:system/lib64/libdisplayfeature.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/libdisplayfeatureservice.so:system/lib64/libdisplayfeatureservice.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/libdisplayservicehidl.so:system/lib64/libdisplayservicehidl.so \
     vendor/xiaomi/cepheus/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
     vendor/xiaomi/cepheus/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
     vendor/xiaomi/cepheus/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
@@ -59,6 +63,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/xiaomi/cepheus/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/xiaomi/cepheus/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/xiaomi/cepheus/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/xiaomi/cepheus/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/xiaomi/cepheus/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
@@ -72,7 +78,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/xiaomi/cepheus/proprietary/lib64/vendor.qti.latency@2.0.so:system/lib64/vendor.qti.latency@2.0.so \
     vendor/xiaomi/cepheus/proprietary/lib/soundfx/libvolumelistener.so:system/lib/soundfx/libvolumelistener.so \
-    vendor/xiaomi/cepheus/proprietary/lib64/soundfx/libvolumelistener.so:system/lib64/soundfx/libvolumelistener.so
+    vendor/xiaomi/cepheus/proprietary/lib64/soundfx/libvolumelistener.so:system/lib64/soundfx/libvolumelistener.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so:system/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so:system/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so \
+    vendor/xiaomi/cepheus/proprietary/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so:system/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
 
 PRODUCT_PACKAGES += \
     QtiTelephonyService \
@@ -81,4 +91,6 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
+    QPerformance \
+    UxPerformance \
     chargeonlymode
